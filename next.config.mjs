@@ -8,7 +8,29 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.marutisuzuki.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'imgd.aeplcdn.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'stimg.cardekho.com',
+        port: '',
+        pathname: '/**',
+      },
     ],
+    domains: ['localhost'],
+  },
+  experimental: {
+    serverActions: true,
   },
 };
 

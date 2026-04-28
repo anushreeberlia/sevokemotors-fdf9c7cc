@@ -1,23 +1,34 @@
 {
-  "name": "maruti-image-scraper",
+  "name": "sevoke-motors-website",
   "version": "1.0.0",
-  "description": "Web scraper for Maruti Suzuki car reference images",
-  "main": "index.js",
+  "description": "Sevoke Motors - Premium Maruti Suzuki Dealership Website with Intelligent Image Scraping",
   "scripts": {
-    "start": "node index.js",
-    "scrape": "node scraper.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "scrape": "node scripts/intelligent-scraper.js"
   },
   "dependencies": {
-    "express": "^4.18.2",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwindcss": "^3.3.0",
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8",
     "axios": "^1.6.0",
     "cheerio": "^1.0.0-rc.12",
     "sharp": "^0.32.6",
     "fs-extra": "^11.1.1",
-    "path": "^0.12.7",
-    "url": "^0.11.3"
+    "probe-image-size": "^7.2.3",
+    "file-type": "^18.7.0"
   },
-  "keywords": ["web-scraping", "images", "maruti-suzuki", "cars"],
-  "author": "Sevoke Motors",
-  "license": "MIT"
+  "devDependencies": {
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.4"
+  }
 }
